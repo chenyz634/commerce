@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+
+	<!--<Resource name="jdbc/cz" auth="Container" type="javax.sql.DataSource"
+		maxConnectionsPerPartition="20" minConnectionsPerPartition="2"
+		acquireIncrement="2" partitionCount="2"
+		username="cz" password="jlzkb.cust" driverClassName="oracle.jdbc.driver.OracleDriver"
+		factory="com.jolbox.bonecp.BoneCPDataSource"
+		jdbcUrl="jdbc:oracle:thin:@192.168.130.39:1521:orcl" />
+		
+	-->
+
+	<Resource name="jdbc/commerce" auth="Container" type="javax.sql.DataSource"
+		maxActive="10" maxIdle="3" maxWait="10000" username="root"
+		password="123456" driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://localhost:3306/commerce" />
+		
+	<!-- 定义J2EE安全，用户及角色都保存在数据库中 -->
+<!-- 	<Realm className="org.apache.catalina.realm.DataSourceRealm"
+		localDataSource="true" dataSourceName="jdbc/WebRecovery" userTable="c_user"
+		userNameCol="c_username" userCredCol="c_password" userRoleTable="c_role"
+		roleNameCol="c_role_name" /> -->
+
+		
+</Context>
